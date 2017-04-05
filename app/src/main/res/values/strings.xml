@@ -1,0 +1,19 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Flyball Score Counter</string>
+
+    <string name="spinnerPrompt">Change background</string>
+
+    <string name="buttonText1"><xliff:g id="dog" example="1st">%s</xliff:g> dog finished faultlessly</string>
+
+    <string name="buttonText2"><xliff:g id="dog" example="1st">%s</xliff:g> dog finished with fault</string>
+
+    <string name="resetScores">Reset Scores</string>
+
+    <string name="teamA">Team A</string>
+    <string name="teamB">Team B</string>
+    <string name="per"> | </string>
+
+    <string name="resetText">Scores have been reset</string>
+
+</resources>
