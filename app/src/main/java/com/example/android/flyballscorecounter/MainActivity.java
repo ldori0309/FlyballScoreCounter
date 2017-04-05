@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     Context context;
 
-    String[] strings = {"","","",""};
     int backgrounds[] = {R.drawable.background1,R.drawable.background2,R.drawable.background3,R.drawable.background4};
 
     int scoreA;
@@ -84,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         background = (ImageView) findViewById(R.id.backgroundImage);
 
-        CustomAdapter customAdapterForBackground = new CustomAdapter(getApplicationContext(),backgrounds,strings);
+        CustomAdapter customAdapterForBackground = new CustomAdapter(getApplicationContext(),backgrounds);
         backgroundSpinner.setAdapter(customAdapterForBackground);
 
         textViewTeamAScore = (TextView) findViewById(R.id.textViewTeamAScore);
