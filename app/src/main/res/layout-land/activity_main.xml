@@ -17,9 +17,9 @@
         android:id="@+id/spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/fiveDp"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:paddingTop="@dimen/fiveDp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,11 +33,12 @@
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="horizontal">
+
             <LinearLayout
                 android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:gravity="center"
-                android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <Button
@@ -45,38 +46,38 @@
                     style="@style/greenButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:layout_marginTop="@dimen/tenDp"
+                    android:layout_marginBottom="@dimen/fiveDp"
                     android:layout_marginLeft="@dimen/tenDp"
                     android:layout_marginRight="@dimen/fiveDp"
-                    android:layout_marginBottom="@dimen/fiveDp"
-                    android:textSize="10sp"
+                    android:layout_marginTop="@dimen/tenDp"
+                    android:layout_weight="1"
                     android:onClick="scoring"
-                    android:text="@string/buttonText1" />
+                    android:text="@string/buttonText1"
+                    android:textSize="10sp" />
 
                 <Button
                     android:id="@+id/teamARedButton"
                     style="@style/redButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="@dimen/tenDp"
                     android:layout_marginLeft="@dimen/tenDp"
                     android:layout_marginRight="@dimen/fiveDp"
                     android:layout_marginTop="@dimen/fiveDp"
-                    android:textSize="10sp"
+                    android:layout_weight="1"
                     android:onClick="scoring"
-                    android:text="@string/buttonText2" />
+                    android:text="@string/buttonText2"
+                    android:textSize="10sp" />
 
             </LinearLayout>
 
             <RelativeLayout
                 android:id="@+id/teamABackground"
                 android:layout_width="0dp"
-                android:layout_weight="2"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/fiveDp"
                 android:layout_marginRight="@dimen/fiveDp"
+                android:layout_weight="2"
                 android:background="@drawable/background"
                 android:paddingTop="@dimen/fiveDp">
 
@@ -92,10 +93,10 @@
 
                 <LinearLayout
                     android:id="@+id/textViewTeamA"
-                    android:layout_below="@id/textViewTeamAName"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewTeamAName"
+                    android:gravity="center">
 
                     <ImageView
                         android:layout_width="0dp"
@@ -137,7 +138,7 @@
                         android:layout_weight="1"
                         android:paddingLeft="@dimen/fiveDp"
                         android:scaleType="fitStart"
-                        android:src="@drawable/redx"/>
+                        android:src="@drawable/redx" />
 
                 </LinearLayout>
 
@@ -193,9 +194,9 @@
                 android:id="@+id/teamBBackground"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="3"
                 android:layout_marginLeft="@dimen/fiveDp"
                 android:layout_marginRight="@dimen/fiveDp"
+                android:layout_weight="3"
                 android:background="@drawable/background"
                 android:paddingTop="@dimen/fiveDp">
 
@@ -211,10 +212,11 @@
 
                 <LinearLayout
                     android:id="@+id/textViewTeamB"
-                    android:layout_below="@id/textViewTeamBName"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewTeamBName"
+                    android:gravity="center">
+
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="@dimen/thirtyDp"
@@ -255,7 +257,7 @@
                         android:layout_weight="1"
                         android:paddingLeft="@dimen/fiveDp"
                         android:scaleType="fitStart"
-                        android:src="@drawable/redx"/>
+                        android:src="@drawable/redx" />
 
                 </LinearLayout>
 
@@ -297,10 +299,11 @@
                 </LinearLayout>
 
             </RelativeLayout>
+
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_weight="3"
                 android:layout_height="match_parent"
+                android:layout_weight="3"
                 android:orientation="vertical">
 
                 <Button
@@ -308,28 +311,28 @@
                     style="@style/greenButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:layout_marginTop="@dimen/tenDp"
+                    android:layout_marginBottom="@dimen/fiveDp"
                     android:layout_marginLeft="@dimen/fiveDp"
                     android:layout_marginRight="@dimen/tenDp"
-                    android:layout_marginBottom="@dimen/fiveDp"
-                    android:textSize="10sp"
+                    android:layout_marginTop="@dimen/tenDp"
+                    android:layout_weight="1"
                     android:onClick="scoring"
-                    android:text="@string/buttonText1" />
+                    android:text="@string/buttonText1"
+                    android:textSize="10sp" />
 
                 <Button
                     android:id="@+id/teamBRedButton"
                     style="@style/redButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="@dimen/tenDp"
                     android:layout_marginLeft="@dimen/fiveDp"
                     android:layout_marginRight="@dimen/tenDp"
                     android:layout_marginTop="@dimen/fiveDp"
-                    android:textSize="10sp"
+                    android:layout_weight="1"
                     android:onClick="scoring"
-                    android:text="@string/buttonText2" />
+                    android:text="@string/buttonText2"
+                    android:textSize="10sp" />
 
             </LinearLayout>
 
@@ -346,7 +349,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/fiveDp"
         android:onClick="reset"
-        android:textSize="@dimen/tenSp"
-        android:text="@string/resetScores" />
+        android:text="@string/resetScores"
+        android:textSize="@dimen/tenSp" />
 
 </RelativeLayout>

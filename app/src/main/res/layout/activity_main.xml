@@ -18,9 +18,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:paddingTop="@dimen/fiveDp"
+        android:layout_alignParentTop="true"
         android:paddingBottom="@dimen/fiveDp"
-        android:layout_alignParentTop="true" />
+        android:paddingTop="@dimen/fiveDp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -57,10 +57,10 @@
 
                 <LinearLayout
                     android:id="@+id/textViewTeamA"
-                    android:layout_below="@id/textViewTeamAName"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewTeamAName"
+                    android:gravity="center">
 
                     <ImageView
                         android:layout_width="0dp"
@@ -102,7 +102,7 @@
                         android:layout_weight="1"
                         android:paddingLeft="@dimen/fiveDp"
                         android:scaleType="fitStart"
-                        android:src="@drawable/redx"/>
+                        android:src="@drawable/redx" />
 
                 </LinearLayout>
 
@@ -150,9 +150,9 @@
                 style="@style/greenButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/thirtyDp"
                 android:layout_marginLeft="@dimen/tenDp"
                 android:layout_marginRight="@dimen/tenDp"
+                android:layout_marginTop="@dimen/thirtyDp"
                 android:onClick="scoring"
                 android:text="@string/buttonText1" />
 
@@ -198,10 +198,10 @@
 
                 <LinearLayout
                     android:id="@+id/textViewTeamB"
-                    android:layout_below="@id/textViewTeamBName"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewTeamBName"
+                    android:gravity="center">
 
                     <ImageView
                         android:layout_width="0dp"
@@ -243,7 +243,7 @@
                         android:layout_weight="1"
                         android:paddingLeft="@dimen/fiveDp"
                         android:scaleType="fitStart"
-                        android:src="@drawable/redx"/>
+                        android:src="@drawable/redx" />
 
                 </LinearLayout>
 
@@ -291,9 +291,9 @@
                 style="@style/greenButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/thirtyDp"
                 android:layout_marginLeft="@dimen/tenDp"
                 android:layout_marginRight="@dimen/tenDp"
+                android:layout_marginTop="@dimen/thirtyDp"
                 android:onClick="scoring"
                 android:text="@string/buttonText1" />
 
