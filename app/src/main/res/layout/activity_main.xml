@@ -18,6 +18,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
+        android:paddingTop="@dimen/fiveDp"
+        android:paddingBottom="@dimen/fiveDp"
         android:layout_alignParentTop="true" />
 
     <LinearLayout
@@ -54,7 +56,7 @@
                     android:textStyle="bold" />
 
                 <LinearLayout
-                    android:id="@+id/imageViewTeamA"
+                    android:id="@+id/textViewTeamA"
                     android:layout_below="@id/textViewTeamAName"
                     android:gravity="center"
                     android:layout_width="match_parent"
@@ -64,26 +66,9 @@
                         android:layout_width="0dp"
                         android:layout_height="@dimen/thirtyDp"
                         android:layout_weight="1"
-                        android:paddingRight="@dimen/tenDp"
+                        android:paddingRight="@dimen/fiveDp"
                         android:scaleType="fitEnd"
                         android:src="@drawable/tick" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="@dimen/thirtyDp"
-                        android:layout_weight="1"
-                        android:paddingLeft="@dimen/tenDp"
-                        android:scaleType="fitStart"
-                        android:src="@drawable/redx"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/textViewTeamA"
-                    android:layout_below="@id/imageViewTeamA"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
 
                     <TextView
                         android:id="@+id/textViewTeamAScore"
@@ -110,6 +95,14 @@
                         android:textColor="@color/white"
                         android:textSize="@dimen/fortySp"
                         android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/thirtyDp"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/fiveDp"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/redx"/>
 
                 </LinearLayout>
 
@@ -204,7 +197,7 @@
                     android:textStyle="bold" />
 
                 <LinearLayout
-                    android:id="@+id/imageViewTeamB"
+                    android:id="@+id/textViewTeamB"
                     android:layout_below="@id/textViewTeamBName"
                     android:gravity="center"
                     android:layout_width="match_parent"
@@ -214,26 +207,9 @@
                         android:layout_width="0dp"
                         android:layout_height="@dimen/thirtyDp"
                         android:layout_weight="1"
-                        android:paddingRight="@dimen/tenDp"
+                        android:paddingRight="@dimen/fiveDp"
                         android:scaleType="fitEnd"
                         android:src="@drawable/tick" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="@dimen/thirtyDp"
-                        android:layout_weight="1"
-                        android:paddingLeft="@dimen/tenDp"
-                        android:scaleType="fitStart"
-                        android:src="@drawable/redx"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/textViewTeamB"
-                    android:layout_below="@id/imageViewTeamB"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
 
                     <TextView
                         android:id="@+id/textViewTeamBScore"
@@ -260,6 +236,14 @@
                         android:textColor="@color/white"
                         android:textSize="@dimen/fortySp"
                         android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/thirtyDp"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/fiveDp"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/redx"/>
 
                 </LinearLayout>
 
@@ -335,7 +319,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/tenDp"
+        android:layout_marginBottom="@dimen/fiveDp"
         android:onClick="reset"
         android:text="@string/resetScores" />
 
